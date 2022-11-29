@@ -10,6 +10,19 @@
         android:background="#20232a" >
         <Button
             android:layout_margin="10dp"
+            android:id="@+id/buttonTest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#39d"
+            android:text="Test Button" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            android:background="    #fff"
+            android:layout_margin="20sp"/>
+        <Button
+            android:layout_margin="10dp"
             android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
