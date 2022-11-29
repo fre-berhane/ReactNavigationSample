@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: "center",
-    backgroundColor: "transparent",
+    backgroundColor: "#fff",
   },
   view_container:{
     margin: 20
