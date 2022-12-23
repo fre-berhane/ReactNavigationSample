@@ -1,10 +1,6 @@
 # [react-native-android-fragment-example](https://github.com/svnm/react-native-android-fragment-example)
 
-An example integrating React Native into an Android Fragment
 
-<div align="center">
-<image src="screenshot.png" width="400" />
-</div>
 
 ## Running the example
 
