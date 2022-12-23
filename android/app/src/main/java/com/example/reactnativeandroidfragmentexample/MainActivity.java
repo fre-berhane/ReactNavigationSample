@@ -1,5 +1,6 @@
 package com.example.reactnativeandroidfragmentexample;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -12,6 +13,7 @@ import com.facebook.react.modules.core.DefaultHardwareBackBtnHandler;
 
 public class MainActivity extends FragmentActivity implements DefaultHardwareBackBtnHandler {
     private Button mButton;
+    private Button mActivityButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +21,17 @@ public class MainActivity extends FragmentActivity implements DefaultHardwareBac
         setContentView(R.layout.main_activity);
 
         mButton = findViewById(R.id.button);
+        mActivityButton = findViewById(R.id.buttonTest);
+
+        mActivityButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,
+                        SecondActivity.class);
+                startActivity(intent);
+            }
+        });
+
         mButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Fragment reactNativeFragment = new ReactFragment.Builder()

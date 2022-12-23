@@ -7,32 +7,34 @@
     <LinearLayout
         android:id="@+id/topView"
         style="@style/row"
-        android:background="#20232a" >
+        android:background="#bcc" >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            android:background="#fff"
+            android:layout_margin="20sp"/>
         <Button
             android:layout_margin="10dp"
             android:id="@+id/buttonTest"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#39d"
-            android:text="Test Button" />
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lines="2"
-            android:background="    #fff"
-            android:layout_margin="20sp"/>
+            android:background="#5ad"
+            android:text="Navigate to React Activity" />
+
         <Button
             android:layout_margin="10dp"
             android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#5ad"
             android:text="Show react fragment" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/bottomView"
         style="@style/row"
-        android:background="#fff">
+        android:background="#444">
         <FrameLayout
             android:id="@+id/reactNativeFragment"
             android:layout_width="match_parent"

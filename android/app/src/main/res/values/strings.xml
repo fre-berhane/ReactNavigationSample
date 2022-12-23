@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">React native android fragment example</string>
+    <string name="react_activity_name">React Activity</string>
 </resources>

@@ -8,7 +8,10 @@ export default function HelloWorld() {
       <Title title="Hello World" />
       <View style={styles.view_container}>
         <Button title="RN Test"/>
-        <TextInput styles={styles.input}/>
+        <TextInput 
+               underlineColorAndroid = "transparent"
+               placeholder = "Placeholder"
+               placeholderTextColor = "#9a73ef"styles={styles.input}/>
       </View>
     </View>
   );
@@ -18,7 +21,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: "center",
-    backgroundColor: "#fff",
+    backgroundColor: "#1d1d1d",
   },
   view_container:{
     margin: 20
@@ -27,7 +30,9 @@ const styles = StyleSheet.create({
     marginTop: 20,
     paddingLeft: 10,
     paddingRight: 10,
-    backgroundColor: "#fff"
+    backgroundColor: "#fff",
+    borderColor:'#fff',
+    borderWidth: 1
   }
 });
 
